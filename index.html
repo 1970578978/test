@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--<link rel="stylesheet" href="stylesheet.css">-->
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <title>学习无忧</title>
+        <style>* {
+            padding:0;
+            margin:0;
+        }
+        body {
+            background-color:#000;
+        }
+        header {
+            width:100%;
+            height:80px;
+            color:#000;
+            background-color:#fff;
+            font-size:30px;
+            padding-left:200px;
+            padding-top:20px;
+            box-sizing:border-box;/*不管内边距多少，盒子大小为width*/
+            font-weight:bolder;
+        }
+        #headerLeft {
+            float:left;
+            width:250px;
+        }
+        #headerRight {
+            margin-left:280px;
+        }
+        nav {
+            margin:0 auto;
+            width:400px;
+            word-spacing:40px;
+        }
+        header a:link {
+            text-decoration:none;
+            color:#000;
+            font-size:20px;
+        }
+        header a:visited {
+            text-decoration:none;
+            color:#000;
+            font-size:20px;
+        }
+        header a:hover {
+            text-decoration:none;
+            color:#F04A23;
+            font-size:20px;
+        }                          /*导航栏*/
+        #conter {
+            margin:0 0 0 200px;
+        
+        }
+        #Blog {
+            color:#fff;
+            font-size:30px;
+            padding:45px 0;
+        }
+        .ImgText {
+            width:820px;
+            float:left;
+        }
+        #Img1 {
+            background:url("image/pic1.png")  no-repeat;
+            width:820px;
+            height:244px;
+        }
+        #Img2 {
+           background: url("image/pic2.png") no-repeat;
+           width:820px;
+           height:244px;
+           margin-top:80px
+        }
+        .Text div {
+            color:#F04A23;
+            font-size:30px;
+            margin: 10px 0 20px 0;
+            width:820px;
+        }
+        .Text p {
+            color:#fff;
+            font-size:19px;
+            width:820px;
+        }
+        .ImgText a {
+            text-decoration: none;
+            color:#F04A23;
+        }
+        button {
+            width:136px;
+            height:36px;
+            background-color:#F04A23;
+            text-align:center;
+            border:none;
+            color:#fff;
+            font-size:20px;
+            font-weight:bold;
+            cursor: pointer;
+            outline:none;
+        }
+        #button2 {
+                position: absolute;
+                left:880px;
+                top:1300px;
+        }
+        #button1 {
+            position: absolute;
+            left:200px;
+            top:1300px;
+        }
+        #right {
+            margin-left:850px;
+        }
+        #RightSidebar {
+            width:200px;
+            margin:0 auto;
+        }
+        .DerTitle {
+            color:#fff;
+            font-weight: bold;
+            margin-bottom:15px;
+            font-size:19px;
+        }
+        .DerTitle~p {
+            color:#F04A23;
+            margin:20px 0;
+            font-size:15px;
+            font-weight:100;
+        }
+        .Dertitle2 {
+            margin-top:60px;
+        }
+        #image1{
+            background:url("image/smallpic1.jpg") no-repeat;
+            width:91px;
+            height:68px;
+            float: left;
+            border: 2px solid #fff;
+            box-sizing:border-box;
+        }
+        #image2{
+            background:url("image/smallpic2.jpg") no-repeat;
+            width:91px;
+            height:68px;
+            float: right;
+            border: 2px solid #fff;
+            box-sizing:border-box;
+        }
+        #image3{
+            background:url("image/smallpic3.jpg") no-repeat;
+            width:91px;
+            height:68px;
+            float: left;
+            margin-top:15px;
+            border: 2px solid #fff;
+            box-sizing:border-box;
+        }
+        #image4{
+            background:url("image/smallpic4.jpg") no-repeat;
+            width:91px;
+            height:68px;
+            float: right;
+            border: 2px solid #fff;
+            box-sizing:border-box;
+            margin-top:15px;
+        }
+        #footer{
+            width:100%;
+            box-sizing:border-box;
+            height:140px;
+            background-color:#F04A23;
+            padding-left:200px;
+            padding-top:50px;
+            position: absolute;
+            left:0;
+            top:1400px;
+        }
+        #footer p {
+            color:#fff;
+            width:440px;
+            float: left;
+        }
+        #footer p span {
+            color:#000;
+        }
+        #footerimage1 {
+            background:url("image/davidlanham.png") no-repeat;
+            padding-left:80px;
+            width:140px;
+            height:80px;
+            position: absolute;
+            top:50px;
+            left:660px;
+        }
+        #footerimage1 p {
+            width:250px;
+        }
+        .footerimage {
+            width:37px;
+            height: 36px;
+            margin-right: 20px;
+        }
+        #footerimage2 {
+            background:url("image/sns_1.png") no-repeat;
+            position: absolute;
+            top:50px;
+            left:980px;
+        }
+        #footerimage3 {
+            background:url("image/sns_2.png") no-repeat;
+            position: absolute;
+            top:50px;
+            left:1050px;
+        }
+        #footerimage4 {
+            background:url("image/sns_3.png") no-repeat;
+            position: absolute;
+            top:50px;
+            left:1120px;
+        }
+        #footerimage5 {
+            background:url("image/sns_4.png") no-repeat;
+            position: absolute;
+            top:50px;
+            left:1190px;
+        }
+        #footerimage6 {
+            background:url("image/sns_5.png") no-repeat;
+            width: 150px;
+            position: absolute;
+            top:50px;
+            left:1260px;
+        }</style>
+    </head>
+    <body>
+        <header>
+            <div id="headerLeft">学习无忧</div>
+            <div id="headerRight"><nav>
+                <a href="#">Blog</a>
+                <a href="#">Work</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            </div>
+        </header>
+        <div id="conter">
+            <div id="Blog">
+                Blog
+            </div>
+            <div class="ImgText">
+                <div id="Img1"></div>
+                <div class="Text">
+                    <div>
+                        I've been interviewed for an upcoming mushroom<br>
+                         kingdom magazine feature!
+                    </div>
+                    <p>
+                    I was recently contacted by the editor of mushroom kingdom,
+                    and he asked me if I would be interested in doing a feature.
+                    So I made some nice illustrations and answered some interview
+                    questions, and all of a sudden I get a couple page spread! The
+                    article focused on my path to sucess in the illustration world
+                    and my hobbies and interests. If you're interested, check it 
+                    out and buy a copy... <a href="#">[Read More]</a>
+                    </p>
+                </div>
+            </div>
+            <div class="ImgText">
+                    <div id="Img2"></div>
+                    <div class="Text">
+                        <div>
+                        I've Been Traveling Around The World For Inspiration. 
+                        </div>
+                        <p>
+                        I sat down to look at my life and realised that all I do it sit down and draw
+                        awesome stuff. So, I made the split decision to travel around the world. I'm 
+                        actually writing this from Sweden, and I love all the types of cheeses here! 
+                        I'll be posting some new illustrations soon inspired by all the travelling 
+                        I've been doing. I'll be in Japan next week to experience the amazing sushi
+                        and squid there and I would love to... <a href="#">[Read More]</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="right">
+                        <div id="RightSidebar">
+                        <div class="DerTitle">Recent Posts</div>
+                        <p>I've Been Interviewed For An Upcoming Mushroom Kingdom Magazine Feature!</p>
+                        <p>I've Been Traveling Around The World For Inspiration.</p>
+                        <p>A Look Into My Creative Process.</p>
+                        <div class="DerTitle Dertitle2">Latest Tweet</div>
+                        <p>@McLovin Thanks for the good wishes man, I'm glad you're a fan!</p>
+                        <div class="DerTitle Dertitle2">Dribbble Feed</div>
+                        <div id="image1"></div>
+                        <div id="image2"></div>
+                        <div id="image3"></div>
+                        <div id="image4"></div>
+                    </div>
+                   </div>
+            <div>
+                <button id="button1">Frenover</button>
+                <button id="button2">Next</button>
+            </div>
+        </div>
+        <div id="footer">
+            <p>
+             
+        <a href='http://www.miitbeian.gov.cn'>湘ICP备18008664</a>
+            <span>DavidLanham.com.</span> 
+            </p>
+            <div id="footerimage1">
+                    David Lanham
+                    <p>I create beatufiul illustrations and designs.
+                <span>About me</span>
+                     </p></div>
+            <div id="footerimage2" class="footerimage"></div>
+            <div id="footerimage3" class="footerimage"></div>
+            <div id="footerimage4" class="footerimage"></div>
+            <div id="footerimage5" class="footerimage"></div>
+            <div id="footerimage6" class="footerimage"></div>
+        </div>
+    </body>
